@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutzzz Barbershop</title>
+    <style>
+        /* --- General Setup --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* --- Navigation --- */
+        header {
+            padding: 25px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #0a0a0a;
+            border-bottom: 2px solid #222;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .logo span {
+            color: #ff3333; /* A bold red accent color */
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff3333;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            /* Using a placeholder barbershop image from Unsplash */
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+        }
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .hero p {
+            font-size: 22px;
+            color: #cccccc;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+        .btn {
+            padding: 15px 35px;
+            background-color: #ff3333;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #cc0000;
+        }
+
+        /* --- Services Section --- */
+        .services {
+            padding: 80px 50px;
+            text-align: center;
+            background-color: #181818;
+        }
+        .services h2 {
+            font-size: 38px;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .service-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .service-card {
+            background: #222222;
+            padding: 40px 30px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .service-card h3 {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .service-card p {
+            color: #aaaaaa;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+        .price {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ff3333;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #0a0a0a;
+            font-size: 14px;
+            color: #555555;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Cut<span>zzz</span></a>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#book" class="btn" style="padding: 10px 20px; margin-left: 20px;">Book Now</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Fresh Fades. Sharp Lines.</h1>
+        <p>Step up your style game at the premier barbershop in town.</p>
+        <a href="#book" class="btn">Grab a Chair</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>The Menu</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>The Classic</h3>
+                <p>A standard precision haircut tailored to your head shape and personal style.</p>
+                <div class="price">$30</div>
+            </div>
+            <div class="service-card">
+                <h3>Skin Fade</h3>
+                <p>Crisp, clean, and blended down to the skin for that sharp, flawless look.</p>
+                <div class="price">$35</div>
+            </div>
+            <div class="service-card">
+                <h3>Beard Sculpt</h3>
+                <p>Professional trimming, sharp lining, finished with a relaxing hot towel.</p>
+                <div class="price">$20</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Cutzzz Barbershop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
